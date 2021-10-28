@@ -1,5 +1,5 @@
-const API_KEY = '21915448-ca2a23b845d7ec90c85800139';
-// const cors_api_host = 'https://cors-anywhere.herokuapp.com/';
+const API_KEY = '21940108-061a720ebe354b15c34ff51f3';
+
 const BASE_URL = 'https://pixabay.com/api';
 
 export default class PhotoApiService {
@@ -19,7 +19,6 @@ export default class PhotoApiService {
     });
 
     const url = `${BASE_URL}/?${searchParams}`;
-    // const url = `${BASE_URL}/?image_type=photo&orientation=horizontal&q=${this.searchQuery}&page=${this.page}&per_page=12&key=${API_KEY}`;
 
     return fetch(url)
       .then(response => response.json())
